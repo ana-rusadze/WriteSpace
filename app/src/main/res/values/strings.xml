@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WriteSpace</string>
+    <string name="title_activity_bottom_navigation">WriteSpace</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="loading_for_new_prompts">Loading for New Prompts</string>
+    <string name="look_up_for_prompts_and_write_a_good_story">Look up for prompts and write a good story...</string>
+    <string name="log_in">Log In</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover_people">Discover people..</string>
+    <string name="read_stories">Read Stories:</string>
+</resources>

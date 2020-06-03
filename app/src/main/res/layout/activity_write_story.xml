@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/surati5"
+    android:orientation="vertical"
+    tools:context=".ui.stories_feed.WriteStoryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CD3DADC"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="92"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Write About"
+                    android:textColor="#4B9592"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry" />
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/ic_bookmark_border_green_24dp"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/promptText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text=""
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="90"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4CD3DADC">
+
+            <EditText
+                android:id="@+id/storyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4CD3DADC"
+                android:gravity="start"
+                android:hint="Let the story begin..."
+                android:maxLength="5000"
+                android:padding="15dp"
+                android:textColor="#FCC8726C"
+                android:textColorHint="#8FA9A8"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Publish"
+        android:textSize="13sp"
+        android:background="@drawable/green_button_background"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

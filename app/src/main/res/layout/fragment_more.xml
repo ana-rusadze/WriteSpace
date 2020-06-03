@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/surati2"
+    android:orientation="vertical"
+    tools:context=".ui.more_options.MoreOptionsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/select_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/white_round_background"
+                android:padding="5dp"
+                android:src="@drawable/ic_person_orange_80dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Name Surname"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/regEmailField"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/auth_background1"
+                android:text="Create a prompt"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#FCFEFEFE"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/regPasswordField"
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/auth_background2"
+                android:gravity="center"
+                android:text="My saved prompts"
+                android:padding="5dp"
+                android:textColor="#6F000000"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/auth_background3"
+                android:text="Edit my info"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/red_field_background"
+                android:text="Delete my account"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#FCFEFEFE"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/logOutButton"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/green_field_background"
+                android:text="Log Out"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#FCFEFEFE"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/accountField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Have a problem?"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/logInTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="3dp"
+                    android:text="Contact Us"
+                    android:textColor="#EC99AA9A"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
